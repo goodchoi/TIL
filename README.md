@@ -9,3 +9,4 @@ Inspired by [namjunemy](https:/github.com/namjunemy/TIL)님, [JayJin님](http://
 ## Rule
 * 허용되지 않은 참조는 하지 않을 것. 
 * 출처를 꼭 밝힐 것.
+* 참조를 할 때는 내 생각을 녹여낼것.
