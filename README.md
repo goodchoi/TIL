@@ -1,4 +1,4 @@
-# TIL : Today I Learned
+# 💿TIL : Today I Learned
 
 * 충분히 이해한 내용도 기록하지 않으면 휘발하고, 뒤엉킨다.
 * 기록하고 또 기록하자!
