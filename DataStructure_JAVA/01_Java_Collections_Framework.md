@@ -25,15 +25,13 @@
 
 ## 2. 구조
 
-![img](https://blog.kakaocdn.net/dn/AGpq3/btqI07wkE1A/yX10IjGgt6N3G6rkT1Ievk/img.png)
+<img src="https://blog.kakaocdn.net/dn/AGpq3/btqI07wkE1A/yX10IjGgt6N3G6rkT1Ievk/img.png" width="450px">
 
 * 점선 : 구현관계 , 실선: 확장 관계(상속).
 
 * 자바에서 제공하는 Collection은 크게 List, Queue , Set 3가지의 인터페이스로 이루어져있다. 그리고 이때까지 학습한 자료구조들은 이를 구현 함으로써 동작한다.
 
   ### Iterable?
-
-  ![image-20221009164946398](/Users/choedonghyeon/Library/Application Support/typora-user-images/image-20221009164946398.png)
 
   자료구조를 초기에 학습하면서 봤던 Iiterator 메소드의 정체를 밝힐 시간이다.
   
