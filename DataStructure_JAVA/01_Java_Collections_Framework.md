@@ -28,14 +28,13 @@
 <img src="https://blog.kakaocdn.net/dn/AGpq3/btqI07wkE1A/yX10IjGgt6N3G6rkT1Ievk/img.png" width="450px">
 
 * 점선 : 구현관계 , 실선: 확장 관계(상속).
+* 자바에서 제공하는 Collection은 크게 List, Queue , Set 3가지의 인터페이스로 이루어져있다. 그리고 이때까지 학습한 자료구조들은 이를 구현 함으로써 동작한다
 
-* 자바에서 제공하는 Collection은 크게 List, Queue , Set 3가지의 인터페이스로 이루어져있다. 그리고 이때까지 학습한 자료구조들은 이를 구현 함으로써 동작한다.
+세부적인 구현들은 각장에서 학습하기로하자.
 
-  ### Iterable?
 
-  자료구조를 초기에 학습하면서 봤던 Iiterator 메소드의 정체를 밝힐 시간이다.
-  
-  
+
+❗️Collection 인터페이스가 extends 하고있는 Iterable 인터페이스에 대해서는 iteratora메소드와 for -each loop 와 연관지어 따로 학습하기로 하자.
 
 
 
