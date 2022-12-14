@@ -14,8 +14,6 @@
 > 
 > 6.메서드의 참조
 
-## 
-
 ## 1. 람다식(Lambda expression)이란?
 
 ---
@@ -39,10 +37,6 @@
 + 메서드의 매개변수로 전달 되거나 메서드의 결과로 반환 될수 있다. 
   
   + 메서드를 변수처럼 다루는 것이 가능해진것!
-
-
-
-
 
 ## 2. 람다식 작성하기 (기본 문법)
 
@@ -71,10 +65,6 @@
   + 괄호 안의 문장이 return 문일 경우 괄호를 생략할 수 없다.
     
     + ` (int a) ->{return a * a; }` --->  ` a -> a * a`
-
-
-
-
 
 ## 3. 함수형 인터페이스 (Functional Interface)
 
@@ -161,3 +151,40 @@ class Outer {
 + 람다식 내 참조하는 지역변수는  모두 상수로 간주 된다. (변경이 허용되지 않는다.)
 
 + 인스턴스 변수는 상수로 간주 되지 않으므로 값을 변경 할 수 있다.
+
+## 4. java.util.function 패키지
+
+---
+
+#### 자주 쓰이는 함수형 인터페이스
+
++ java.util.function 에 자주 쓰이는 함수형 인터페이스가 정의 되어있다.
+
++ 주요 함수형 인터페이스
+  
+  <img title="" src="file:///Users/choedonghyeon/Library/Application%20Support/marktext/images/2022-12-14-23-59-24-image.png" alt="" width="563">
+  
+  (T는 Type을 R은 Return Type을 의미한다.) 
+
+#### Predicate
+
++ Predicate는 Fuction의 변형이다. 조건식을 람다식으로 표현하는데 사용된다.
+- ```java
+  Predicate<String> isEmptyStr = s -> s.length() == 0; 
+  String s = "";
+  
+  if(isEmptyStr.test(s)) // if(s.length() == 0)
+  {
+      ,,,
+  }
+  ```
+  
+  - 지금 람다를 배우면서 가장 중요한 것은 객체지향에서 벗어나서 함수를 컨트롤 하고 있다는점이다.
+
+#### 매개변수가 두 개인 함수형 인터페이스
+
++ | 함수형 인터페이스 | 메서드 | 설명  |
+  | --------- | --- | --- |
+  |           |     |     |
+  |           |     |     |
+  |           |     |     |
