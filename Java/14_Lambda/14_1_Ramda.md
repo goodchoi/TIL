@@ -159,12 +159,14 @@ class Outer {
 #### 자주 쓰이는 함수형 인터페이스
 
 + java.util.function 에 자주 쓰이는 함수형 인터페이스가 정의 되어있다.
+  
+  + <img title="" src="file:///Users/choedonghyeon/Library/Application%20Support/marktext/images/2022-12-15-13-41-53-image.png" alt="" width="446">
 
 + 주요 함수형 인터페이스
   
   <img title="" src="file:///Users/choedonghyeon/Library/Application%20Support/marktext/images/2022-12-14-23-59-24-image.png" alt="" width="563">
   
-  (T는 Type을 R은 Return Type을 의미한다.) 
+  (T는 Type을 R은 Return Type을 의미한다. **함수형 인터페이스의 이름들을 보면 의미를 이해하기 쉽다 , 타당한 이유로 명명했기때문이다!)** 
 
 #### Predicate
 
@@ -183,8 +185,10 @@ class Outer {
 
 #### 매개변수가 두 개인 함수형 인터페이스
 
-+ | 함수형 인터페이스 | 메서드 | 설명  |
-  | --------- | --- | --- |
-  |           |     |     |
-  |           |     |     |
-  |           |     |     |
++ 매개 변수를 두개를 받는 의미로 접두어 'Bi' 를 붙인다.
+
++ | 함수형 인터페이스           | 메서드                    | 설명                                                                        |
+  | ------------------- | ---------------------- | ------------------------------------------------------------------------- |
+  | BiConsumer<T, U>    | void accept(T t, U u)  | 두 개의 매개변수, 반환 값은 없음. (매개변수를 받지만 반환값이 없기 때문에 소모하는 의미로 consumer라고 명명한것 같다.) |
+  | BiPredicate<T, U>   | boolean test(T t, U u) | 두 개의 매개변수, 반환 값은boolean                                                   |
+  | BiFunction<T, U, R> | R apply(T t, U u)      | 두 개의 매개변수, 하나의 결과 반환                                                      |
