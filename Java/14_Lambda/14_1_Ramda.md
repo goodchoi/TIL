@@ -160,11 +160,11 @@ class Outer {
 
 + java.util.function 에 자주 쓰이는 함수형 인터페이스가 정의 되어있다.
   
-  + <img title="" src="file:///Users/choedonghyeon/Library/Application%20Support/marktext/images/2022-12-15-13-41-53-image.png" alt="" width="446">
-
-+ 주요 함수형 인터페이스
+  @
   
-  <img title="" src="file:///Users/choedonghyeon/Library/Application%20Support/marktext/images/2022-12-14-23-59-24-image.png" alt="" width="563">
+  + 주요 함수형 인터페이스
+
++ <img title="" src="file:///Users/choedonghyeon/Library/Application%20Support/marktext/images/2022-12-14-23-59-24-image.png" alt="" width="563">S
   
   (T는 Type을 R은 Return Type을 의미한다. **함수형 인터페이스의 이름들을 보면 의미를 이해하기 쉽다 , 타당한 이유로 명명했기때문이다!)** 
 
