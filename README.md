@@ -3,7 +3,7 @@
 * 충분히 이해한 내용도 기록하지 않으면 휘발하고, 뒤엉킨다.
 * 기록하고 또 기록하자!
 
-Inspired by [김남준](https:/github.com/namjunemy/TIL)님, [JayJin](http://milooy.github.io/TIL/)님 의 TIL
+Inspired by [김남준](https://github.com/namjunemy/TIL)님, [JayJin](http://milooy.github.io/TIL/)님 의 TIL
 
 
 ## Rule
