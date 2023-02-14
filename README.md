@@ -7,6 +7,6 @@ Inspired by [김남준](https://github.com/namjunemy/TIL)님, [JayJin](http://mi
 
 
 ## Rule
-* 허용되지 않은 참조는 하지 않을 것. 
+* 그날 배운것은 최대한 그날 올리자
 * 출처를 꼭 밝힐 것.
-* 참조를 할 때는 내 생각을 녹여낼것.
+* 충분히 이해한 상태에서 정리할 것.
