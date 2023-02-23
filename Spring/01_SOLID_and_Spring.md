@@ -97,7 +97,7 @@
   + 쉽게, 구현하는 클래스에 의존하지말고 인터페이스 자체에만 집중할것.
   + ex) MemberRepository m = new MemoryMemberRepository();
   + -> DIP 위반
-+ 다형성 만으로는 OCP , DIP를 지킬수없다. 뭔가 더 필요없다.
++ 다형성 만으로는 OCP , DIP를 지킬수없다. 뭔가 더 필요하다.
 
 ### 1-5 객체지향설계와 스프링
 
