@@ -251,7 +251,7 @@
 
 > > *컴파일 오류는 세상에서 가장빠르고 좋은오류이다...*
 
-## 7-8 롬복 (lombok)
+## 7-9 롬복 (lombok)
 
 요즘 필수 라이브러리 ,, 롬복에 대해 알아보자 (getter,sette 줄이는 용으로만 썼던나를 반성하며)
 
@@ -268,7 +268,7 @@
   }
   ```
   
-  + ? Autowired날리고 생성자 까지 날렸다. 롬복의 힘...
+  + `@Autowired`날리고 생성자 까지 날렸다. 롬복의 힘...
 
 ### 롬복 추가하기
 
@@ -282,32 +282,29 @@
       }
   }
   //lombok 설정 추가 끝
-  ```
-
+  
   dependencies {
-      implementation 'org.springframework.boot:spring-boot-starter'
-      //lombok추가 시
-      compileOnly 'org.projectlombok:lombok'
-      annotationProcessor 'org.projectlombok:lombok'
-      testCompileOnly 'org.projectlombok:lombok'
-      testAnnotationProcessor 'org.projectlombok:lombok'
-      //lombok추가 끝
-      testImplementation 'org.springframework.boot:spring-boot-starter-test'
+  implementation 'org.springframework.boot:spring-boot-starter'
+  //lombok추가 시
+  compileOnly 'org.projectlombok:lombok'
+  annotationProcessor 'org.projectlombok:lombok'
+  testCompileOnly 'org.projectlombok:lombok'
+  testAnnotationProcessor 'org.projectlombok:lombok'
+  //lombok추가 끝
+  testImplementation 'org.springframework.boot:spring-boot-starter-test
   }
+  ```
+  
+  + 코끼리 누를것.
 
-```
-+ 코끼리 누를것.
+## 7-10 조회 빈이 두개 이상이라면?
 
-
-
-## 7-8 조회 빈이 두개 이상이라면?
-
-+ `@Autowired`는 기본적으로 타입으로 조회한다. 그렇다면 똑같은 타입의 빈이 두개 이상이면?
+  `@Autowired`는 기본적으로 타입으로 조회한다. 그렇다면 똑같은 타입의 빈이 두개 이상이면?
 
 ```java
  NoUniqueBeanDefinitionException: No qualifying bean of type
-  'hello.core.discount.DiscountPolicy' available: expected single matching bean
-  but found 2: fixDiscountPolicy,rateDiscountPolicy
+ 'hello.core.discount.DiscountPolicy' available: expected single matching bean
+ but found 2: fixDiscountPolicy,rateDiscountPolicy
 ```
 
 + 이런 오류를 확인할 수 있다.
@@ -363,7 +360,7 @@
   
   + 물론 이때도 Qualifier가 우선순위가 더높다. (스프링에선 수동이 무조건 우선순위가 높다.)
 
-## 7-9 애너테이션 직접만들기
+## 7-11 애너테이션 직접만들기
 
 `@Qualifier`에 문자열을 직접 표기하는것은 너무 쿨하지 못하다. 이럴땐 이것도 괜찮다.
 
@@ -394,7 +391,7 @@ public OrderServiceImpl(MemberRepository memberRepository,
 
 + 이제좀 쿨한것같다.
 
-## 7-10 특정 클래스의 모든 빈이 필요할 때
+## 7-12 특정 클래스의 모든 빈이 필요할 때
 
 + ex) 할인서비스를 제공하는데 클라이언트가 할인의 종류를 선택할 수 있는경우 (rate,fix)
 
@@ -414,7 +411,7 @@ public OrderServiceImpl(MemberRepository memberRepository,
 
     이렇게 하면 Map에 키값으로 빈의 이름 밸류에는 빈객체가 담기게 된다. LIst에는빈객체만 담긴다.
 
-## 7-11 자동, 수동의 올바른 실무 운영기준
+## 7-13 자동, 수동의 올바른 실무 운영기준
 
 + 편리한 자동 기능을 기본 으로 사용하자.
   
@@ -429,9 +426,7 @@ public OrderServiceImpl(MemberRepository memberRepository,
   + 주로 기술 적인문제나 공통관심사 처리할떄 수동 빈등록을 사용하는것이 좋다. 
     
     + ex) 데이터 베이스 연결 , 공통 로그처리
-    
-    + 
 
-## 7-13 이번 장에서 배운점
+## 7-14 이번 장에서 배운점
 
 스프링 부트를 이용해서 프로젝트를 할때 스프링에 대한 나의 이해도가 얼마나 형편 없었는지 알게되었다. Autowired를 왜써야 했고, 어떤 원리로 동작하는지 전혀 몰랐다. 사실 원초적인 문제는 스프링이 대체 뭘하는 건지 몰랐다는 사실이지만... 이제라도 하나씩 알아가는것 같아서 너무 다행이다. 
