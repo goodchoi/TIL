@@ -40,7 +40,7 @@
 
 ### 2-2-1 도메인 설계
 
-![domain](IMG/domain.png)
+<img src ="IMG/domain.png" width ="50%">
 
 + 회원은 여러 상품을 주문 할수 있다. 주문과 상품은 다대다 관계가 되므로 주문상품이라는 엔티티로 다대다 관계를 박살냈다. 
 
@@ -48,7 +48,8 @@
 
 ### 2-2-2 엔티티 설계
 
-![entitiy](IMG/entitiy.png)
+<img src ="IMG/entitiy.png" width ="60%">
+
 
 + Address 는 값 타입(임베디드 타입)이다.
 
@@ -60,7 +61,8 @@
 
 ### 2-2-3 테이블 설계
 
-![table](IMG/table.png)
+<img src ="IMG/table.png" width ="60%">
+
 
 + ITEM 테이블을 보면 엔티티에서 앨범,도서 ,영화 타입으로 나누어져 있었는데 DTYPE 컬럼으로 구분하며 한 테이블안에 다 들어있는 모습을 확인 할 수 있다.
 
