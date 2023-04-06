@@ -173,14 +173,7 @@
   
   ```java
   package jpabook.jpashop.domain.item;
-  
-  import jpabook.jpashop.domain.Category;
-  import lombok.Getter;
-  import lombok.Setter;
-  
-  import javax.persistence.*;
-  import java.util.ArrayList;
-  import java.util.List;
+ 
   
   @Entity
   @Inheritance(strategy = InheritanceType.SINGLE_TABLE) //상속 전략
@@ -208,16 +201,11 @@
   ```java
   package jpabook.jpashop.domain;
   
-  import lombok.Getter;
-  import lombok.Setter;
-  import org.aspectj.weaver.ast.Or;
-  
-  import javax.persistence.*;
   
   @Entity
   @Getter @Setter
   public class Delivery {
-  ```
+  
 
       @Id @GeneratedValue
       @Column(name = "delivery_id")
@@ -231,45 +219,46 @@
     
       @Enumerated(EnumType.STRING) //ordinal 쓰면 안됨 1 2 3 4 이런식으로 들어가기 때문에 만약 중간에 상태가 하나 추가된다? 망
       private DeliveryStatus deliveryStatus; //READY, COMP
-
   }
+    ```
+  
 
 
 + 카테고리 엔티티
 
-```java
-package jpabook.jpashop.domain;
+  ```java
+  package jpabook.jpashop.domain;
 
 
-@Entity
-@Getter @Setter
-public class Category {
+  @Entity
+  @Getter @Setter
+  public class Category {
 
-    @Id @GeneratedValue
-    @Column(name = "category_id")
-    private Long id;
+      @Id @GeneratedValue
+      @Column(name = "category_id")
+      private Long id;
 
-    private String name;
+      private String name;
 
-    @ManyToMany
-    @JoinTable(name = "categoty_item",
-            joinColumns = @JoinColumn(name = "category_id"),
-            inverseJoinColumns = @JoinColumn(name = "item_id"))
-    private List<Item> items = new ArrayList<>();
+      @ManyToMany
+      @JoinTable(name = "categoty_item",
+              joinColumns = @JoinColumn(name = "category_id"),
+              inverseJoinColumns = @JoinColumn(name = "item_id"))
+      private List<Item> items = new ArrayList<>();
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "parent_id")
-    private Category parent;
+      @ManyToOne(fetch = FetchType.LAZY)
+      @JoinColumn(name = "parent_id")
+      private Category parent;
 
-    @OneToMany(mappedBy = "parent")
-    private List<Category> child = new ArrayList<>();
+      @OneToMany(mappedBy = "parent")
+      private List<Category> child = new ArrayList<>();
 
-    public void addChildCategory(Category child) {
-        this.child.add(child);
-        child.setParent(this);
-    }
-}
-```
+      public void addChildCategory(Category child) {
+          this.child.add(child);
+          child.setParent(this);
+      }
+  }
+  ```
 
 + 주소 값 타입
   
