@@ -186,7 +186,8 @@ static class ClientBean {
 
 + 그림
 
-![webScope](IMG/webscope.png)
+
+<img src="IMG/webscope.png" width="75%">
 
 + 코드
   

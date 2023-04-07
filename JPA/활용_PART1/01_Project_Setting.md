@@ -30,7 +30,8 @@ implementation 'org.springframework.boot:spring-boot-devtools'
 
 + h2 설치 후 콘솔로 실행
 
-![](IMG/h2.png)
+
+<img src="IMG/h2.png" width="50%">
 
 ## 1-4 application.yaml 생성
 

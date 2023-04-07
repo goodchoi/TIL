@@ -40,7 +40,7 @@
 
 ### 2-2-1 도메인 설계
 
-![domain](IMG/domain.png)
+<img src ="IMG/domain.png" width ="50%">
 
 + 회원은 여러 상품을 주문 할수 있다. 주문과 상품은 다대다 관계가 되므로 주문상품이라는 엔티티로 다대다 관계를 박살냈다. 
 
@@ -48,7 +48,8 @@
 
 ### 2-2-2 엔티티 설계
 
-![entitiy](IMG/entitiy.png)
+<img src ="IMG/entitiy.png" width ="60%">
+
 
 + Address 는 값 타입(임베디드 타입)이다.
 
@@ -60,7 +61,8 @@
 
 ### 2-2-3 테이블 설계
 
-![table](IMG/table.png)
+<img src ="IMG/table.png" width ="60%">
+
 
 + ITEM 테이블을 보면 엔티티에서 앨범,도서 ,영화 타입으로 나누어져 있었는데 DTYPE 컬럼으로 구분하며 한 테이블안에 다 들어있는 모습을 확인 할 수 있다.
 
@@ -171,14 +173,7 @@
   
   ```java
   package jpabook.jpashop.domain.item;
-  
-  import jpabook.jpashop.domain.Category;
-  import lombok.Getter;
-  import lombok.Setter;
-  
-  import javax.persistence.*;
-  import java.util.ArrayList;
-  import java.util.List;
+ 
   
   @Entity
   @Inheritance(strategy = InheritanceType.SINGLE_TABLE) //상속 전략
@@ -206,16 +201,11 @@
   ```java
   package jpabook.jpashop.domain;
   
-  import lombok.Getter;
-  import lombok.Setter;
-  import org.aspectj.weaver.ast.Or;
-  
-  import javax.persistence.*;
   
   @Entity
   @Getter @Setter
   public class Delivery {
-  ```
+  
 
       @Id @GeneratedValue
       @Column(name = "delivery_id")
@@ -229,45 +219,46 @@
     
       @Enumerated(EnumType.STRING) //ordinal 쓰면 안됨 1 2 3 4 이런식으로 들어가기 때문에 만약 중간에 상태가 하나 추가된다? 망
       private DeliveryStatus deliveryStatus; //READY, COMP
-
   }
+    ```
+  
 
-```
+
 + 카테고리 엔티티
 
-```java
-package jpabook.jpashop.domain;
+  ```java
+  package jpabook.jpashop.domain;
 
 
-@Entity
-@Getter @Setter
-public class Category {
+  @Entity
+  @Getter @Setter
+  public class Category {
 
-    @Id @GeneratedValue
-    @Column(name = "category_id")
-    private Long id;
+      @Id @GeneratedValue
+      @Column(name = "category_id")
+      private Long id;
 
-    private String name;
+      private String name;
 
-    @ManyToMany
-    @JoinTable(name = "categoty_item",
-            joinColumns = @JoinColumn(name = "category_id"),
-            inverseJoinColumns = @JoinColumn(name = "item_id"))
-    private List<Item> items = new ArrayList<>();
+      @ManyToMany
+      @JoinTable(name = "categoty_item",
+              joinColumns = @JoinColumn(name = "category_id"),
+              inverseJoinColumns = @JoinColumn(name = "item_id"))
+      private List<Item> items = new ArrayList<>();
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "parent_id")
-    private Category parent;
+      @ManyToOne(fetch = FetchType.LAZY)
+      @JoinColumn(name = "parent_id")
+      private Category parent;
 
-    @OneToMany(mappedBy = "parent")
-    private List<Category> child = new ArrayList<>();
+      @OneToMany(mappedBy = "parent")
+      private List<Category> child = new ArrayList<>();
 
-    public void addChildCategory(Category child) {
-        this.child.add(child);
-        child.setParent(this);
-    }
-}
-```
+      public void addChildCategory(Category child) {
+          this.child.add(child);
+          child.setParent(this);
+      }
+  }
+  ```
 
 + 주소 값 타입
   
