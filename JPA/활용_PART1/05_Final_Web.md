@@ -160,7 +160,7 @@
 
 + 동작 방식
   
-  <img title="" src="IMG/merge.png" alt="" width="">
+  <img title="" src="IMG/merge.png" alt="" width="60%">
   
   + `merge()`를 실행하면 준영속 엔티티의 식별자값(id)로 1차캐시에서 엔티티를 조회하고 없으면 DB를 조회하여 1차 캐시에 저장한다.
   
