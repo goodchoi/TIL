@@ -84,6 +84,8 @@ public class Order {
 
 + 이 예제에서는 한 상품에대해서만 주문하는 경우를 고려한다. 코드 자체는`OrderItem`을 가변인자로 받고있다.
 
+<br>
+
 ## 4-2 주문 상품 엔티티(OrderItem) 개발
 
 ```java
@@ -127,6 +129,8 @@ public class OrderItem {
 + `cancel()` : 주문 취소시 다시 재고를 원상 복구한다.
 
 + `getTotalPrice()` : 주문하는 상품의 가격과 수량을 곱한 값을 반환하고, 이것을 `OrderItem`에서 사용한다.
+
+<br>
 
 ## 4-3 주문 Repository개발
 
@@ -213,7 +217,7 @@ public class OrderRepository {
 > 
 > : 1,2는 위의 코드에서 볼 수 있듯이 조금,,현실성이 없다. 답은 Query dsl(라이브러리)인데 이것은 부피가 매우 크므로 나중에 다루기로하자.
 
-
+<br>
 
 ## 4-4 주문 Service 개발
 
@@ -275,7 +279,7 @@ public class OrderService {
 
 +  이미 엔티티에서 비즈니스 로직을 갖기 때문에 serice 에서는 호출밖에 일어 나지 않는다.
 
-
+<br>
 
 ## 4-5 주문 서비스 테스트 개발
 
@@ -372,7 +376,7 @@ class OrderServiceTest {
 
 + 현재 예제에서는 JUNIT4 를 사용하고 있고 , 중간중간 assert J 와 Junit5 코드를 연습할 겸 작성했다.
 
-
+<br>
 
 ## 4-6 주문 검색메서드 테스트해보기 (직접)
 
