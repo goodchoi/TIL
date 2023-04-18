@@ -24,7 +24,7 @@
 
 ex)
 
-<img title="" src="file:///Users/choedonghyeon/Desktop/TIL/JPA/기본/IMG/origin.png" alt="" width="173">-----><img title="" src="file:///Users/choedonghyeon/Desktop/TIL/JPA/기본/IMG/embedded.png" alt="" data-align="inline" width="364">
+<img title="" src="IMG/origin.png" alt="" width="173">-----><img title="" src="IMG/embedded.png" alt="" data-align="inline" width="364">
 
 + `@Embeddable` : 값 타입을 정의하는 곳에 표시한다.
 
