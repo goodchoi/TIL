@@ -24,7 +24,7 @@
 
 ex)
 
-<img title="" src="file:///Users/choedonghyeon/Desktop/TIL/JPA/기본/IMG/origin.png" alt="" width="173">-----><img title="" src="file:///Users/choedonghyeon/Desktop/TIL/JPA/기본/IMG/embedded.png" alt="" data-align="inline" width="364">
+<img title="" src="IMG/origin.png" alt="" width="173">-----><img title="" src="IMG/embedded.png" alt="" data-align="inline" width="364">
 
 + `@Embeddable` : 값 타입을 정의하는 곳에 표시한다.
 
@@ -88,7 +88,7 @@ ex)
 
 <br>
 
-### 08-4 값 타입 비교
+## 08-4 값 타입 비교
 
 + 객체 타입의 값 타입은 equals 메서드를 정의하는게 좋다.
 
@@ -98,7 +98,7 @@ ex)
 
 <br>
 
-### 08-5 값 타입 컬렉션
+## 08-5 값 타입 컬렉션
 
 + 값 타입을 한개이상 저장할 때 사용한다.
 
@@ -153,3 +153,4 @@ public class AddressEntity {
 + 엔티티를 값타입으로 만들지 않게 주의한다.
 + 식별자가 필요하고, 지속적으로 값을 추적(단독으로 조회),변경 해야한다면 엔티티로 만들어야한다.
 + 설문조사, 고객 취향(셀렉트 박스) 이런것들이 들어가면 되지 않을까 딱히 의미는 크게 없는
++ (추가) 값 타입 한개는 지연 로딩이 아니다. join이 필요하지 않기때문이다. 그렇지만 값타입 컬렉션은 다른 테이블에서 FK값으로 join으로 하기 때문에 기본전략이 지연로딩이다!
