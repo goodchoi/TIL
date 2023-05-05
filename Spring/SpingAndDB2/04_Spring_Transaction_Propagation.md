@@ -52,7 +52,8 @@
 
 만약 외부 트랜잭션이 수행중인데 내부에서 트랜잭션이 추가적으로 수행되는 상황이라면? 가장 기대하는 방식은 두 트랜잭션 모두 하나의 트랜잭션으로 묶는 것이다. 이것을 위해 추상적인 개념을 도입할 수 있다.
 
-#### 물리 트랜잭션, 논리 트랜잭션<img title="" src="IMG/propagation.png" alt="" data-align="center" width="544">
+#### 물리 트랜잭션, 논리 트랜잭션
+<img title="" src="IMG/propagation.png" alt="" data-align="center" width="544">
 
 
 
