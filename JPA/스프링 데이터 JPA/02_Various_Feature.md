@@ -22,7 +22,7 @@ public interface MemberRepositoryCustom {
 }
 ```
 
-<br>
+<br> 
 
 #### 사용자 정의 인터페이스 구현체
 
