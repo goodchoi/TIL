@@ -11,3 +11,8 @@
 + 추상화/상속/다형성/캡슐화
 + 자바 컴파일 과정에 대해 설명 하시오 (키워드: class loader, jvm, compiler/interpreter, 등)
 
+## 2주차
++ JVM 메모리 구조에 대해 설명 하시오 (키워드: Method Area, Heap, Stack, etc)
++ 자바 Garbage Collector 동작원리와 과정에 대해 설명 하시오 (키워드: Heap Memory, Minor/Major GC, etc)
++ Thread Safety와 동기화(synchronization)에 대해 설명 하시오 (키워드: lock, synchronized, deadlock, ThreadLocal, etc)
+
