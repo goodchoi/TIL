@@ -30,3 +30,11 @@
 + [x] http methods(POST, GET, PUT, PATCH, DELETE)와 http status code(1xx, 2xx, 3xx, 4xx)대해 설명하시오
 + [x] JDBC에 대해 설명하시오 (키워드: 드라이버, 트랜잭션, Statement vs PreparedStatement)
 + [x] DB Connection Pool의 동작원리에 대해 설명하시오
+
+## 5주차
++ [x] [데이터베이스 clustered index vs non-clustered index에 대해 설명하시오](https://github.com/goodchoi/TIL/blob/main/f-lab/week5/clustered_non_clusterd_idx.md)
++ [x] [객체 지향 설계 5원칙 - SOLID (vs 다른 개발 원칙)](https://github.com/goodchoi/TIL/blob/main/f-lab/week5/SOLID.md)
++ [x] [디자인 패턴 중 3가지 선택- 예: 싱글톤, 팩토리, 어댑터 (디자인 패턴 사용 이유, 예제, 조심해야 할 점)](https://github.com/goodchoi/TIL/blob/main/f-lab/week5/Design_Pattern.md)
++ [x] [스프링의 IoC(Inversion of Control)과 DI(Dependency Injection)에 대해 설명하시오](https://github.com/goodchoi/TIL/blob/main/f-lab/week5/Spring_IOC_AND_DI.md)
++ [x] [스프링 빈 주입 방법에 대해 설명하시오](https://github.com/goodchoi/TIL/blob/main/f-lab/week5/Spring_DI.md)
++ [x] [Spring AOP(Aspect-Oriented Programming)에 대해 설명하시오](https://github.com/goodchoi/TIL/blob/main/f-lab/week5/Spring_AOP.md)
