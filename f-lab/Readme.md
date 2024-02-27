@@ -38,3 +38,12 @@
 + [x] [스프링의 IoC(Inversion of Control)과 DI(Dependency Injection)에 대해 설명하시오](https://github.com/goodchoi/TIL/blob/main/f-lab/week5/Spring_IOC_AND_DI.md)
 + [x] [스프링 빈 주입 방법에 대해 설명하시오](https://github.com/goodchoi/TIL/blob/main/f-lab/week5/Spring_DI.md)
 + [x] [Spring AOP(Aspect-Oriented Programming)에 대해 설명하시오](https://github.com/goodchoi/TIL/blob/main/f-lab/week5/Spring_AOP.md)
+
+## 6주차
++ [x] Git Branch 전략에 대해 설명하시오 (eg. git flow, github flow, etc)
++ [x] ORM (Object Relational Mapping)에 대해 설명하시오
++ [x] ORM/JPA의 n+1문제와 해결방법에 대해 설명하시오
++ [x] 스프링 JPA 영속성 컨텍스트란? (EntityManger, Entity 생명주기, 1차 캐시, 쓰기 지연, dirty checking, flush)
++ [x] Spring Entity vs DTO vs DAO vs VO 개념과 차이점 및 관련 어노테이션에 대해 설명하시오 
++ [x] OpenAPI spec과 사용 이유
++ [ ] Rest API 설계 원칙과 네이밍 컨벤션
